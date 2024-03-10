@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        const alumns = [
+            { name: 'Pepe Viruela', T1: false, T2: false, T3: true },
+            { name: 'Lucia Aranda', T1: true, T2: false, T3: true },
+            { name: 'Abel Cabeza', T1: false, T2: true, T3: true },
+            { name: 'Alfredo Blanco', T1: false, T2: false, T3: false },
+            { name: 'Raquel Benito', T1: true, T2: true, T3: true }
+        ];
+
+        for (let alumn of alumns) {
+            let quarter = 0;
+            if (alumn.T1 === true) {
+                quarter++
+            }
+
+
+
+            if (alumn.T2 === true) {
+                quarter++
+            }
+
+            if (alumn.T3 === true) {
+                quarter++
+            }
+
+            if (quarter >= 2) {
+                alumn.isApproved = true
+            } else {
+                alumn.isApproved = false
+            }
+
+
+        }
+
+        console.log(alumns)
+
+
+    </script>
+</body>
+
+</html>

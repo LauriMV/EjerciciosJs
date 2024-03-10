@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="exercise-3.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="contenedor"></div>
+
+    <script>
+
+        const contenedor = document.getElementById("contenedor");
+
+        const nuevoDiv = document.createElement("div");
+
+        for (let i = 0; i < 6; i++) {
+            const nuevoParrafo = document.createElement("p");
+
+            nuevoParrafo.textContent = `Learn this is crazy ${i + 1}`;
+
+            nuevoDiv.appendChild(nuevoParrafo);
+        }
+
+        contenedor.appendChild(nuevoDiv);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
